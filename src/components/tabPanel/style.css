@@ -1,0 +1,55 @@
+button {
+  padding: 1rem;
+  color: rgba(217, 217, 217, 1);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 107.688%;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  /* transition: color 0.3s; */
+}
+
+button.active {
+  color: rgba(18, 32, 35, 1);
+  border-radius: 6px;
+  background: #e1ff00;
+  outline: none;
+}
+
+.tab-content {
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: height 0.3s, opacity 0.3s;
+}
+
+.tab-content.show {
+  height: auto;
+  opacity: 1;
+}
+
+.tab-content .tab-pane {
+  opacity: 0;
+  transform: translateY(10px);
+  /* transition: opacity 0.3s, transform 0.3s; */
+}
+
+.tab-content .tab-pane.active {
+  opacity: 1;
+  transform: translateY(0);
+  /* transition-delay: 0.2s; */
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,52 @@
+/* VerticalNavigationTab.css */
+.vertical-nav-container {
+  display: flex;
+}
+
+.nav {
+  background-color: #2a2a2a;
+  padding: 10px 0;
+}
+
+/* Style the navigation links */
+.nav-link {
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 0;
+}
+
+.nav-link.active {
+  background-color: #4c4c4c;
+  color: #fff;
+}
+
+/* Style the tab content */
+.tab-content {
+  margin: auto;
+}
+
+.tab-pane.active {
+  display: block;
+  padding: 20px;
+  /* background-color: #f2f2f2; */
+}
+
+
+/* Style the file input */
+label[for='fileInput'] {
+  /* display: block;
+  background-color: #007bff; */
+  color: white;
+  /* padding: 10px 20px; */
+  /* border: none; */
+  /* border-radius: 5px; */
+  cursor: pointer;
+}
+
+/* Show the selected file name when a file is chosen */
+#fileName {
+  margin-top: 10px;
+  /* display: block; */
+  color: white;
+}

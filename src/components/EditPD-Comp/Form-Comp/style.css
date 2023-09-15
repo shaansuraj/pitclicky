@@ -1,0 +1,161 @@
+.editpd-form-comp-main-container {
+    /* width: 100%; */
+    height: 100%;
+    /* display: flex;
+    align-items: center; */
+    border-radius: 0.5vw;
+    padding: 2% 0;
+    position: relative;
+}
+
+.editpd-form-comp-main-container .slide-num-para {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    display: flex;
+    align-items: center;
+    background: none;
+    justify-content: center;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+.editpd-form-comp-main-container .cross-btn {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    display: flex;
+    align-items: center;
+    background: none;
+    justify-content: center;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    overflow: hidden;
+    font-size: 2.5vw;
+    cursor: pointer;
+}
+
+.editpd-form-comp-main-container .left-content-div {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.editpd-form-comp-main-container .left-content-div p {
+    font-size: 1.2vw;
+}
+
+.editpd-form-comp-main-container .left-content-div p span {
+    font-weight: 600;
+}
+
+.editpd-form-comp-main-container .left-content-div img {
+    margin-left: -40%;
+    width: 120%;
+    object-fit: contain;
+}
+
+.editpd-form-comp-main-container .left-content-div button {
+    background-color: #122023;
+    color: #fff;
+    padding: 1.5% 12%;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0.2vw 0.2vw 0.3vw gray;
+    cursor: pointer;
+    font-size: 0.9vw;
+    letter-spacing: 0.1vw;
+    font-weight: 400;
+}
+
+.editpd-form-comp-main-container .item-div-style {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 4.5vw;
+    margin-bottom: 1vw;
+    padding: 0% 10%;
+}
+
+.editpd-form-comp-main-container .item-div-style p {
+    font-size: 0.9vw;
+}
+
+.editpd-form-comp-main-container .item-div-style input[type='text'] {
+    min-height: 2.2vw;
+    font-size: 0.9vw;
+    border: 1px solid #BDBDBD;
+    border-radius: 0.2vw;
+    background-color: rgba(189, 189, 189, 0.16);
+    outline: none;
+}
+
+.editpd-form-comp-main-container .middle-content-div {
+    width: 35%;
+    height: 80%;
+    overflow-y: auto;
+}
+
+.editpd-form-comp-main-container .middle-content-div::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+}
+
+.editpd-form-comp-main-container .middle-content-div::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.editpd-form-comp-main-container .middle-content-div::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
+.editpd-form-comp-main-container .middle-content-div::-webkit-scrollbar-thumb:hover {
+    background: #777;
+}
+
+.heading-list-div {
+    width: 100%;
+    height: 4.5vw;
+    margin-bottom: 1vw;
+    padding: 0% 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+.right-content-div {
+    width: 25%;
+    height: 80%;
+    overflow-y: auto;
+}
+
+.editpd-form-comp-main-container .right-content-div::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+}
+
+.editpd-form-comp-main-container .right-content-div::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.editpd-form-comp-main-container .right-content-div::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
+.editpd-form-comp-main-container .right-content-div::-webkit-scrollbar-thumb:hover {
+    background: #777;
+}
+
+.btn-list-div {
+    /* width: 100%; */
+    height: 4.5vw;
+    margin-bottom: 1vw;
+    padding: 0% 10%;
+    display: flex;
+    flex-direction: column;
+}

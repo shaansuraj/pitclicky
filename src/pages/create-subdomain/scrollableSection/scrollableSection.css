@@ -1,0 +1,41 @@
+/* scrollableSection.css */
+
+.scrollable-section {
+    height: 100%;
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+.activation-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.activation-card-content {
+    flex: 1;
+}
+
+.activation-card-actions {
+    flex-shrink: 0;
+    margin-left: 1rem;
+}
+
+/* Add custom styling for the Delete button */
+.activation-card-actions button {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.activation-card-actions button:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}

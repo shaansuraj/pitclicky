@@ -1,0 +1,243 @@
+.login-page-main-container {
+  width: 100%;
+  height: 100vh;
+  /* border: 1px solid black; */
+  display: flex;
+  overflow: hidden;
+  background-color: #000000;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.login-page-main-container.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.login-page-main-container .logo-div {
+  position: absolute;
+  z-index: 2;
+  top: 5%;
+  left: 7%;
+  width: 10%;
+}
+
+.login-page-main-container .logo-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.login-page-main-container .left-div {
+  width: 50%;
+  height: 100%;
+  /* border: 1px solid black; */
+}
+
+.login-page-main-container .left-div .content-div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-page-main-container .left-div .content-div h1 {
+  font-size: 2.5vw;
+  text-align: center;
+  font-weight: 400;
+  color: #fff;
+}
+
+.login-page-main-container .left-div .content-div h1 span {
+  letter-spacing: 0.6vw;
+  font-weight: 600;
+  color: #e1ff00;
+}
+
+.login-page-main-container .left-div .content-div form {
+  width: 70%;
+  height: 40%;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.login-page-main-container .left-div .content-div form input {
+  width: 100%;
+  height: 2.5vw;
+  border-radius: 0.3vw;
+  border: 1px solid gray;
+  font-size: 1.2vw;
+  padding-left: 2%;
+}
+
+.login-page-main-container .left-div .content-div form p {
+  width: 100%;
+  height: 6%;
+  display: flex;
+  align-items: center;
+  gap: 4%;
+  font-size: 1.2vw;
+  font-weight: 500;
+  color: #fff;
+}
+
+.login-page-main-container .left-div .content-div form p span {
+  width: 5%;
+  height: 90%;
+  border: 1px solid #fff;
+  border-radius: 0.3vw;
+  cursor: pointer;
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 0.4%;
+}
+
+.login-page-main-container .left-div .content-div form p span span {
+  width: 60%;
+  height: 35%;
+  transform: rotate(-45deg);
+  border-radius: 0;
+  border: none;
+  border-left: 0.1vw solid #fff;
+  border-bottom: 0.1vw solid #fff;
+}
+
+.login-page-main-container .left-div .content-div .link-btn {
+  width: 100%;
+  height: 2.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3vw;
+  border: none;
+  background-color: #e1ff00;
+  color: #333;
+  font-size: 1.6vw;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+}
+
+.login-page-main-container .rigth-div {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-page-main-container .rigth-div .bigger-circle {
+  position: absolute;
+  z-index: 0;
+  top: -30%;
+  left: 0;
+  width: 90vw;
+  height: 90vw;
+  object-fit: contain;
+  transition: 0.8s;
+}
+
+.login-page-main-container .rigth-div .small-circle {
+  position: absolute;
+  z-index: 1;
+  top: -10%;
+  left: 40%;
+  width: 70vw;
+  height: 70vw;
+  object-fit: contain;
+}
+
+.login-page-main-container .rigth-div .s-shape-img {
+  position: absolute;
+  z-index: 2;
+  top: 4%;
+  left: 20%;
+  width: 80%;
+  height: 90%;
+  object-fit: contain;
+  transition: 3s;
+}
+
+.login-page-main-container .rigth-div .laptop-container {
+  position: absolute;
+  z-index: 3;
+  /* width: 600px; */
+  /* height: 600px; */
+  width: 38vw;
+  height: 38vw;
+  /* border: 1px solid black; */
+  transition: 0s;
+  left: 106%;
+  transition: 2s;
+}
+
+.login-page-main-container .rigth-div .laptop-container img {
+  position: absolute;
+  width: 140%;
+  height: 100%;
+  object-fit: contain;
+  transition: 0.8s;
+}
+
+.login-page-main-container .rigth-div .laptop-container .image1 {
+  right: 100%;
+}
+
+.login-page-main-container .rigth-div .laptop-container .image2 {
+  transform: rotate(90deg);
+  bottom: 117%;
+  right: -15%;
+}
+
+.login-page-main-container .rigth-div .laptop-container .image3 {
+  transform: rotate(180deg);
+  left: 100%;
+}
+
+.login-page-main-container .rigth-div .laptop-container .image4 {
+  transform: rotate(270deg);
+  top: 117%;
+  right: -15%;
+}
+
+/* Error and success prompt styles */
+.error-prompt,
+.success-prompt {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 0, 0, 0.8); /* Error prompt background color */
+  color: #fff; /* Error prompt text color */
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.error-prompt span,
+.success-prompt span {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+/* Style for success prompt */
+.success-prompt {
+  background-color: rgba(0, 128, 0, 0.8); /* Success prompt background color */
+  /* ... (additional styles for success prompt) */
+}

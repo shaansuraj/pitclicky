@@ -1,0 +1,39 @@
+/* Engagement.css */
+.engagement-container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 20px;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: black; /* Set text color to black for the heading */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff; /* Set button color to blue */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s; /* Add a transition for smooth hover effect */
+}
+
+button:hover {
+  background-color: #0056b3; /* Change the hover color to a darker shade of blue */
+}
+
+/* Add a margin to separate the button from the content */
+button + .engagement-data {
+  margin-top: 10px;
+}
+
+.engagement-data {
+  font-size: 18px;
+  color: black; /* Set text color to black for the data */
+}

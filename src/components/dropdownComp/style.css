@@ -1,0 +1,20 @@
+.dropdown-menu {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.dropdown.show .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown-link{
+    test-decoration: none;
+    color: white;
+
+}
+
+.dropdown-link:hover{
+    test-decoration: none;
+}

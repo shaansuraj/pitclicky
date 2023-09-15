@@ -1,0 +1,21 @@
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.service-container {
+  height: 62vh;
+  border-right: 0.2rem solid #e1ff00;
+  border-left: 0.2rem solid #e1ff00;
+}
+
+.mainpage-container {
+  background-image: url("https://rentblob.blob.core.windows.net/pitch/img/Pitch-Catalyst/home-page-imgs/vector53.png");
+  background-size: cover;
+}

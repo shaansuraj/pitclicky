@@ -1,0 +1,35 @@
+.dashboard {
+  padding: 20px;
+  background-color: #f4f4f4;
+  overflow-y: hidden;
+}
+
+/* Header styles */
+.header {
+  text-align: center;
+  /* margin-bottom: 20px; */
+}
+
+.title {
+  font-size: 28px;
+  color: #333; /* Dark text color */
+  margin: 0; /* Remove margin */
+}
+
+/* Styles for individual dashboard sections */
+.section {
+  background-color: #fff; /* White background color */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 20px; /* Add margin to separate sections vertically */
+  display: block; /* Display sections as blocks (one above the other) */
+}
+
+/* Section title styles */
+.section-title {
+  font-size: 20px;
+  color: #444; /* Slightly darker text color */
+  margin-bottom: 10px;
+}

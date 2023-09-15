@@ -1,0 +1,87 @@
+.editpd-comp-main-container {
+  width: 1%;
+  height: 10%;
+  position: relative;
+  right: 50rem;
+}
+
+.editpd-comp-main-container .slider {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes identifier {
+  0% { margin-bottom: 3%; }
+  100% { margin-bottom: 0%; }
+}
+
+@keyframes identifier2 {
+  0% { margin-bottom: 0%; }
+  100% { margin-bottom: 3%; }
+}
+
+.editpd-comp-main-container .slider .slides {
+  min-width: 10vw;
+  height: 8vw;
+  transition: 1.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  user-select: none;
+  position: relative;
+}
+
+.editpd-comp-main-container .slider .slides img {
+  width: 100%;
+  height: 50%;
+  object-fit: contain;
+  animation-name: bounce;
+}
+
+.editpd-comp-main-container .slider .slides .not-blured-div {
+  display: none;
+}
+
+.editpd-comp-main-container .slider .slides .blurred-div {
+  position: absolute;
+  width: 88%;
+  height: 80%;
+  backdrop-filter: blur(2px);
+  z-index: 1;
+}
+
+.editpd-comp-main-container .slider .slides .shadow-div {
+  position: absolute;
+  top: 110%;
+  width: 70%;
+  height: 5%;
+  border-radius: 50%;
+  background-color: #E1FF00;
+  transform: rotate(5deg);
+  filter: blur(4px);
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1640px) {
+  .editpd-comp-main-container .slider { height: 380px; }
+  .editpd-comp-main-container .slider .slides { min-width: 280px; height: 180px; filter: drop-shadow(10px 12px 2px gray); }
+}
+
+@media only screen and (max-width: 1440px) {
+  .editpd-comp-main-container .slider { height: 360px; }
+  .editpd-comp-main-container .slider .slides { min-width: 260px; height: 160px; filter: drop-shadow(10px 12px 2px gray); }
+}
+
+@media only screen and (max-width: 1240px) {
+  .editpd-comp-main-container .slider { height: 340px; }
+  .editpd-comp-main-container .slider .slides { min-width: 240px; height: 140px; filter: drop-shadow(10px 12px 2px gray); }
+}
+
+@media only screen and (max-width: 1040px) {
+  .editpd-comp-main-container .slider { height: 320px; }
+  .editpd-comp-main-container .slider .slides { min-width: 220px; height: 120px; filter: drop-shadow(10px 12px 2px gray); }
+}
