@@ -1,5 +1,2 @@
-[build]
-  publish = "public" 
-  functions = "netlify/functions" # Create this folder for proxy functions
-  /*    /index.html   200
+ /*    /index.html   200
 
